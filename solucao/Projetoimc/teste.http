@@ -1,0 +1,44 @@
+@base_url = http://localhost:5000/
+
+#####CADASTAR ALUNO
+POST {{@base_url}}/ProjetoImc/Aluno/Cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Rogerio",
+    "sobrenome": "Silva"
+}
+
+### LISTAR ALUNO
+GET {{base_url}}/ProjetoImc/Aluno/Listar
+Content-Type: application/json
+
+
+### EDITAR ALUNO
+GET {{@base_url}}/ProjetoImc/Aluno/Editar
+
+{
+    "nome": "Pedro",
+    "sobrenome": "Augusto"
+}
+
+### CADASTRAR IMC ###
+POST {{@base_url}}/ProjetoImc/Imc/Cadastrar
+Content-Type: application/json
+
+{
+    "altura": 1.70,
+    "peso": 87
+}
+
+### LISTAR IMC
+GET {{base_url}}/ProjetoImc/Imc/Listar
+
+### ALTERAR IMC
+GET {{@base_url}}/ProjetoImc/Aluno/Editar
+Content-Type: application/json
+
+{
+    "altura": 1.65,
+    "peso": 76
+}
